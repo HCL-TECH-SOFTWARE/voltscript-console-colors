@@ -1,0 +1,277 @@
+%REM
+    Copyright 2023 HCL America, Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+%END REM
+
+%REM
+	Library ConsoleColors 
+	Constants for manipulating terminal console colors 
+	
+	 
+%END REM
+
+Option Declare
+Option Public
+%REM
+	Property CONSOLE_DEFAULT 
+	Resets all attributes and colors to defaults (ESC[0m) 
+	@return	String
+%END REM
+Property Get CONSOLE_DEFAULT As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[0m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_ATTR_BOLD 
+	Adds bold to output (ESC[2m) 
+	@return	String
+%END REM
+Property Get CONSOLE_ATTR_BOLD As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[1m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_ATTR_UNDERSCORE 
+	Adds underscore to output (ESC[4m) 
+	@return	String
+%END REM
+Property Get CONSOLE_ATTR_UNDERSCORE As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[4m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_ATTR_NO_BOLD 
+	Removes bold from console text (ESC[22m) 
+	@return	String
+%END REM
+Property Get CONSOLE_ATTR_NO_BOLD As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[22m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_ATTR_NO_UNDERSCORE 
+	Removes underscore from output (ESC[24m) 
+	@return	String
+%END REM
+Property Get CONSOLE_ATTR_NO_UNDERSCORE As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[24m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_COLOR_BLACK 
+	Sets forground color to black (ESC[30m) 
+	@return	String
+%END REM
+Property Get CONSOLE_COLOR_BLACK As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[30m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_COLOR_RED 
+	Sets foreground color to red (ESC[31m) 
+	@return	String
+%END REM
+Property Get CONSOLE_COLOR_RED As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[31m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_COLOR_GREEN 
+	Sets foregorund color to green (ESC[32m) 
+	@return	String
+%END REM
+Property Get CONSOLE_COLOR_GREEN As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[32m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_COLOR_YELLOW 
+	Sets foreground color to yellow (ESC[33m) 
+	@return	String
+%END REM
+Property Get CONSOLE_COLOR_YELLOW As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[33m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_COLOR_BLUE 
+	Sets foreground color to blue (ESC[34m) 
+	@return	String
+%END REM
+Property Get CONSOLE_COLOR_BLUE As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[34m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_COLOR_MAGENTA 
+	Sets foreground color to magenta (ESC[35m) 
+	@return	String
+%END REM
+Property Get CONSOLE_COLOR_MAGENTA As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[35m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_COLOR_CYAN 
+	Sets foreground color to cyan (ESC[36m) 
+	@return	String
+%END REM
+Property Get CONSOLE_COLOR_CYAN As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[36m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_COLOR_WHITE 
+	Sets foreground color to white (ESC[37m) 
+	@return	String
+%END REM
+Property Get CONSOLE_COLOR_WHITE As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[37m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_COLOR_DEFAULT 
+	Sets just foreground color to default (ESC[39m) 
+	@return	String
+%END REM
+Property Get CONSOLE_COLOR_DEFAULT As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[39m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_BACKGROUND_COLOR_BLACK 
+	Sets background color to black (ESC[40m) 
+	@return	String
+%END REM
+Property Get CONSOLE_BACKGROUND_COLOR_BLACK As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[40m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_BACKGROUND_COLOR_RED 
+	Sets background color to red (ESC[41m) 
+	@return	String
+%END REM
+Property Get CONSOLE_BACKGROUND_COLOR_RED As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[41m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_BACKGROUND_COLOR_GREEN 
+	Sets background color to green (ESC[42m) 
+	@return	String
+%END REM
+Property Get CONSOLE_BACKGROUND_COLOR_GREEN As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[42m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_BACKGROUND_COLOR_YELLOW 
+	Sets background color to yellow (ESC[43m) 
+	@return	String
+%END REM
+Property Get CONSOLE_BACKGROUND_COLOR_YELLOW As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[43m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_BACKGROUND_COLOR_BLUE 
+	Sets background color to blue (ESC[44m) 
+	@return	String
+%END REM
+Property Get CONSOLE_BACKGROUND_COLOR_BLUE As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[44m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_BACKGROUND_COLOR_MAGENTA 
+	Sets background color to magenta (ESC[45m) 
+	@return	String
+%END REM
+Property Get CONSOLE_BACKGROUND_COLOR_MAGENTA As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[45m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_BACKGROUND_COLOR_CYAN 
+	Sets background color to cyan (ESC[46m) 
+	@return	String
+%END REM
+Property Get CONSOLE_BACKGROUND_COLOR_CYAN As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[46m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_BACKGROUND_COLOR_WHITE 
+	Sets the background color to white (ESC[47m) 
+	@return	String
+%END REM
+Property Get CONSOLE_BACKGROUND_COLOR_WHITE As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[47m"
+	'}}
+End Property
+
+%REM
+	Property CONSOLE_BACKGROUND_COLOR_DEFAULT 
+	Sets just the background color to default (ESC[49m) 
+	@return	String
+%END REM
+Property Get CONSOLE_BACKGROUND_COLOR_DEFAULT As String 
+	'{{SETI_AUTHOR_CODE_
+	Return Chr(27) & "[49m"
+	'}}
+End Property

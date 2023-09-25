@@ -1,0 +1,22 @@
+{
+    "name": "Console Colors",
+    "license": "Apache 2.0",
+    "description": "Constants for manipulating terminal console colors",
+    "displayName": "VoltScript Console Colors",
+    "version": "1.0.0",
+    "authors": [
+        "Paul Withers"
+    ],
+    "repo": "https://github.com/HCL-TECH-SOFTWARE/voltscript-console-colors.git",
+    "publisher": "HCL Software",
+    "sourceDir": "src",
+    "testDir": "test",
+    "libsDir": "",
+    "vsesDir": "",
+    "mainScripts": [
+        "VoltScriptConsoleColors.vss"
+    ],
+    "integrationTestScripts": [
+        "manual.vss"
+    ]
+}

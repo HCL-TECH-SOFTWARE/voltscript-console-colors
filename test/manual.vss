@@ -1,0 +1,53 @@
+%REM
+    Copyright 2022 HCL America, Inc.
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+        http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+%END REM
+
+%REM
+	Obviously this can only be manually tested.
+%END REM
+
+Option Declare
+Option Public
+Use "../src/ConsoleColors"
+
+Sub Initialize
+    Print CONSOLE_COLOR_BLUE & "Blue"
+    Print CONSOLE_COLOR_CYAN & "Cyan"
+    Print CONSOLE_COLOR_GREEN & "Green"
+    Print CONSOLE_COLOR_MAGENTA & "Magenta"
+    Print CONSOLE_COLOR_RED & "Red"
+    Print CONSOLE_COLOR_WHITE & "White"
+    Print CONSOLE_COLOR_YELLOW & "Yellow"
+    Print CONSOLE_BACKGROUND_COLOR_BLUE & "Blue background"
+    Print CONSOLE_BACKGROUND_COLOR_CYAN & "Cyan background"
+    Print CONSOLE_BACKGROUND_COLOR_GREEN & "Green background"
+    Print CONSOLE_BACKGROUND_COLOR_MAGENTA & "Magenta background"
+    Print CONSOLE_BACKGROUND_COLOR_RED & "Red background"
+    Print CONSOLE_BACKGROUND_COLOR_WHITE & "White background"
+    Print CONSOLE_COLOR_BLACK & "Black on white"
+    Print CONSOLE_BACKGROUND_COLOR_YELLOW & "Yellow background"
+    Print CONSOLE_COLOR_GREEN & "Green on Yellow"
+    Print CONSOLE_BACKGROUND_COLOR_BLACK & "Black background"
+    Print CONSOLE_BACKGROUND_COLOR_BLUE & "Blue background"
+    Print "The next bit should be " & CONSOLE_ATTR_BOLD & "Bold"
+    Print CONSOLE_ATTR_NO_BOLD & "Not bold"
+    Print CONSOLE_ATTR_UNDERSCORE & "Underscored"
+    Print CONSOLE_ATTR_NO_UNDERSCORE & "Not underscored"
+    Print CONSOLE_BACKGROUND_COLOR_DEFAULT & "Green on default"
+    Print CONSOLE_BACKGROUND_COLOR_BLUE & CONSOLE_COLOR_DEFAULT & "Default on blue"
+    Print CONSOLE_BACKGROUND_COLOR_BLUE & CONSOLE_COLOR_RED & "Cyan on Blue"
+    Print CONSOLE_DEFAULT & "Back to defaults"
+    Print Chr(27) & "[36m" & Chr(27) & "[44mCyan on blue"
+End Sub
