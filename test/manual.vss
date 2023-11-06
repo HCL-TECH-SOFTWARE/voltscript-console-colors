@@ -20,7 +20,7 @@
 
 Option Declare
 Option Public
-Use "../src/ConsoleColors"
+Use "../src/VoltScriptConsoleColors"
 
 Sub Initialize
     Print CONSOLE_COLOR_BLUE & "Blue"
