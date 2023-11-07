@@ -3,7 +3,7 @@
     "license": "Apache 2.0",
     "description": "Constants for manipulating terminal console colors",
     "displayName": "VoltScript Console Colors",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "authors": [
         "Paul Withers"
     ],
